@@ -258,7 +258,11 @@ document.addEventListener('DOMContentLoaded', function () {
       title: 'Net Zero Mission Alignment',
       category: 'NET ZERO MISSION',
       isFuturistic: true,
+<<<<<<< HEAD
       image: 'images/net0.png',
+=======
+      image: 'images/net00.png',
+>>>>>>> e9eed06 (upload code)
       desc: "Curriculum directly aligned with India's Net Zero Carbon Mission through key industry MOUs.",
       tag: 'Net Zero',
       icon: 'bi-bullseye',
@@ -280,7 +284,11 @@ document.addEventListener('DOMContentLoaded', function () {
       title: '73 Industry Partners',
       category: 'INDUSTRY PARTNERS',
       isFuturistic: true,
+<<<<<<< HEAD
       image: 'images/aiimpact3.png',
+=======
+      image: 'images/aiimpact.png',
+>>>>>>> e9eed06 (upload code)
       desc: 'Active partnerships with 73 industry partners including Tata Power, Hinduja, MSEDCL, MASMA, and Synergy Green.',
       tag: 'Industry Partners',
       icon: 'bi-buildings-fill',
