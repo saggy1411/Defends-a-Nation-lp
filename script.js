@@ -255,55 +255,47 @@ document.addEventListener('DOMContentLoaded', function () {
   const domainsData = {
     '01': {
       number: 'USP 01',
-      title: 'Net Zero Mission Alignment',
-      category: 'NET ZERO MISSION',
+      title: 'Co-Created with DRDO & Armed Forces',
+      category: 'CO-CREATED CURRICULUM',
       isFuturistic: true,
-<<<<<<< HEAD
-      image: 'images/net0.png',
-=======
-      image: 'images/net00.png',
->>>>>>> e9eed06 (upload code)
-      desc: "Curriculum directly aligned with India's Net Zero Carbon Mission through key industry MOUs.",
-      tag: 'Net Zero',
+      image: 'images/about-lab.webp',
+      desc: 'Curriculum designed in consultation with DRDO, defence industry leaders, and decorated officers from the Army, Navy, and Air Force.',
+      tag: 'Co-Created',
       icon: 'bi-bullseye',
-      chips: ['Net Zero Mission', 'Industry MOUs', 'Green Economy', 'Carbon Neutrality']
+      chips: ['DRDO', 'Army', 'Navy', 'Air Force']
     },
     '02': {
       number: 'USP 02',
-      title: 'Comprehensive Energy Curriculum',
-      category: 'ENERGY CURRICULUM',
+      title: '70% Hands-On. 30% Classroom.',
+      category: 'APPLIED LEARNING',
       isFuturistic: true,
-      image: 'images/net1.png',
-      desc: 'Covers Renewable Energy, Energy Analytics, Smart Grids, Energy Economics, and Entrepreneurship in the Energy Sector.',
-      tag: 'Energy Curriculum',
+      image: 'images/program12.png',
+      desc: 'Backed by a dedicated Smart Centre of Excellence – Manufacturing Lab, 70% of your learning happens inside state-of-the-art defence labs and workshops.',
+      tag: '70:30 Model',
       icon: 'bi-lightning-charge-fill',
-      chips: ['Renewable Energy', 'Energy Analytics', 'Smart Grids', 'Energy Economics']
+      chips: ['Smart Centre of Excellence', 'Hands-On Labs', 'Workshops', '30% Classroom']
     },
     '03': {
       number: 'USP 03',
-      title: '73 Industry Partners',
-      category: 'INDUSTRY PARTNERS',
+      title: 'Guaranteed Yearly Industry Exposure',
+      category: 'INDUSTRY EXPOSURE',
       isFuturistic: true,
-<<<<<<< HEAD
-      image: 'images/aiimpact3.png',
-=======
-      image: 'images/aiimpact.png',
->>>>>>> e9eed06 (upload code)
-      desc: 'Active partnerships with 73 industry partners including Tata Power, Hinduja, MSEDCL, MASMA, and Synergy Green.',
-      tag: 'Industry Partners',
+      image: 'images/program1r.png',
+      desc: 'Structured yearly internships and live projects with defence sector partners — including DPSUs, private defence companies, and MSMEs.',
+      tag: 'Industry Exposure',
       icon: 'bi-buildings-fill',
-      chips: ['Tata Power', 'Hinduja', 'MSEDCL', 'MASMA & Synergy Green']
+      chips: ['DPSUs & MSMEs', 'Yearly Internships', 'Live Projects', 'Defence Partners']
     },
     '04': {
       number: 'USP 04',
-      title: 'Live Projects & Internships',
-      category: 'HANDS-ON EXPOSURE',
+      title: 'Aligned with National Defence Missions',
+      category: 'NATIONAL MISSION',
       isFuturistic: true,
-      image: 'images/net3.png',
-      desc: '100% domain-based internships and live projects providing direct exposure to the renewable energy industry.',
-      tag: 'Live Exposure',
+      image: 'images/cont.png',
+      desc: "Designed in direct alignment with Aatmanirbhar Bharat, Make in India – Defence, and India's Defence Industrial Corridors.",
+      tag: 'National Mission',
       icon: 'bi-briefcase-fill',
-      chips: ['100% Internships', 'Live Projects', 'Renewable Energy', 'Industry Exposure']
+      chips: ['Make in India – Defence', 'Aatmanirbhar Bharat', 'Defence Corridors', 'Indigenous Tech']
     }
   };
 
@@ -793,15 +785,15 @@ document.addEventListener('DOMContentLoaded', function () {
 
   if (faqPhotoTall) {
     faqPhotoTall.addEventListener('error', function () {
-      if (!this.src.includes('card-clinical-dietetics.webp')) {
-        this.src = 'images/card-clinical-dietetics.webp';
+      if (!this.src.includes('gro3.png')) {
+        this.src = 'images/gro3.png';
       }
     });
   }
   if (faqPhotoShort) {
     faqPhotoShort.addEventListener('error', function () {
-      if (!this.src.includes('card-human-nutrition.webp')) {
-        this.src = 'images/card-human-nutrition.webp';
+      if (!this.src.includes('gro1.png')) {
+        this.src = 'images/gro1.png';
       }
     });
   }
@@ -880,18 +872,19 @@ document.addEventListener('DOMContentLoaded', function () {
       });
     });
   }
-});
 
-
-
-
-// ==========================================================================
-// Career Track Cards - Direct Scroll to Admission Form (Modal Removed)
-// ==========================================================================
-const pillarCards = document.querySelectorAll('.interactive-pillar-card');
-pillarCards.forEach(function (card) {
-  card.addEventListener('click', function (e) {
-    e.preventDefault();
-    scrollToAdmissionForm();
+  // ==========================================================================
+  // Career Track Cards - Direct Scroll to Admission Form
+  // ==========================================================================
+  const pillarCards = document.querySelectorAll('.interactive-pillar-card');
+  pillarCards.forEach(function (card) {
+    card.addEventListener('click', function (e) {
+      // If the clicked element is already the apply button, let delegation handle it
+      if (!e.target.closest('.card-hover-btn')) {
+        e.preventDefault();
+        scrollToAdmissionForm();
+      }
+    });
   });
 });
+

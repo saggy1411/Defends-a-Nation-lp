@@ -788,9 +788,6 @@ video {
    About SSPU - Institutional Impact & Metrics Section (White Theme Fix)
    ========================================================================== */
 .about-impact-section {
-  background-image: url(./images/.webp);
-  background-size: cover;
-  background-repeat: no-repeat;
   background-color: #ffffff;
   padding: 60px 0 60px 0;
   position: relative;
@@ -4645,6 +4642,23 @@ video {
   .bento-card .d-flex.align-items-center.justify-content-center.gap-4 {
     gap: 16px !important;
   }
+
+  /* Interactive Pillar Cards on Touch & Mobile */
+  .interactive-pillar-card {
+    height: 380px !important;
+  }
+
+  .interactive-pillar-card .card-hover-panel {
+    opacity: 1 !important;
+    transform: none !important;
+    pointer-events: auto !important;
+    background: linear-gradient(to top, rgba(16, 4, 7, 0.96) 0%, rgba(20, 4, 7, 0.88) 75%, transparent 100%) !important;
+    padding: 20px 14px 14px 14px !important;
+  }
+
+  .interactive-pillar-card .card-default-pill {
+    display: none !important;
+  }
 }
 
 /* --------------------------------------------------------------------------
@@ -4709,7 +4723,7 @@ video {
     font-size: 16px !important;
   }
 
-  /* Button Touch-Friendly Target Height */
+  /* Button Touch-Friendly Target Height & Wrapping */
   .btn-enquire-now,
   .btn-elig-banner-apply,
   .btn-prefooter-primary,
@@ -4719,6 +4733,19 @@ video {
     display: inline-flex;
     align-items: center;
     justify-content: center;
+  }
+
+  .btn-prefooter-primary,
+  .btn-prefooter-secondary {
+    white-space: normal !important;
+    text-align: center !important;
+    line-height: 1.35 !important;
+    padding: 12px 14px !important;
+  }
+
+  /* Donut Card Layout Flexibility */
+  .donut-callout-text h4 {
+    font-size: 1.05rem !important;
   }
 
   /* Ensure card hover buttons and links fit full width on mobile */
@@ -4816,6 +4843,26 @@ video {
 
   .prefooter-heading {
     font-size: 1.24rem !important;
+  }
+
+  /* Compact CTA & Footer Pills */
+  .floating-admissions-link {
+    padding: 7px 8px 7px 10px !important;
+    gap: 6px !important;
+  }
+
+  .cta-text {
+    font-size: 0.74rem !important;
+  }
+
+  .cta-action-badge {
+    padding: 4px 10px !important;
+    font-size: 0.7rem !important;
+  }
+
+  .footer-contact-pill {
+    font-size: 0.75rem !important;
+    padding: 5px 10px !important;
   }
 }
 
